@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+Countdown Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built in React and displays a countdown timer. The criteria is laid out below and screenshots have been uploaded to Postimg.cc.
 
-## Available Scripts
+To start this project locally, open a terminal and, in the parent directory (make sure you're level with the package.json), run the two commands:
+1) npm install
+2) npm run start
 
-In the project directory, you can run:
+You should see the project open to localhost:3000
 
-### `npm start`
+Link to screenshot gallery: https://postimg.cc/gallery/v4MY9Sb/0934c9a1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Criteria:
+1) The user should be able to enter a # of minutes (positive integer) and click a “Start”
+button to initialize the countdown. Any character that is not a positive integer is not allowed.
+2) Timer format: MM:SS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Screenshot for points 1 and 2
+screenshots/pointsOneTwo.PNG
+AND @ https://postimg.cc/gallery/v4MY9Sb/0934c9a1
 
-### `npm test`
+3) The user should be able to pause & resume the countdown using pause / resume buttons.
+4) While the countdown timer is active, the user should be able to speed up / slow down the speed at the following rates:
+○ 1.0X (normal speed, selected by default)
+○ 1.5X
+○ 2X
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Screenshot for points 3 and 4
+screenshots/pointsThreeFour.PNG
+screenshots/pointsThreeFour_2.PNG
+AND @ https://postimg.cc/gallery/v4MY9Sb/0934c9a1
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5) When half of the selected duration has been passed, display a string of text above
+the countdown timer reading: “More than halfway there!”
+6) When the countdown timer reaches 0, this text should change to: “Time’s up!”
+7) When the countdown is within 20 seconds of ending, the countdown timer text should turn red.
+8)  At 10 seconds, the text should start blinking. The red is slightly tranparent on altering numbers, so it appears to be blinking.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Screenshots for points 5-8
+screenhots/pointFive.PNG
+screenhots/pointSix.PNG
+screenhots/pointSeven.PNG
+screenhots/pointEight.PNG
+AND @ https://postimg.cc/gallery/v4MY9Sb/0934c9a1
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+9) The time and date for when the countdown will reach 0:00 should be displayed for the local time in each office. This time adjusts to pauses and changes in the speed of the timer, which would cause the end time to change.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Screenshot for point 9
+screenhots/pointNine.PNG
+AND @ https://postimg.cc/gallery/v4MY9Sb/0934c9a1
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
